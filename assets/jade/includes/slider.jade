@@ -1,0 +1,27 @@
+
+div(id="slider" , class="")
+	//class="hidden-xs"
+	div(class="")
+		div(id="carousel-1" , class="carousel slide" , data-ride="carousel")
+
+			//Contenedor de slide
+
+			div(class="carousel-inner" , role="listbox")
+				
+				div(class="item active")
+					a(href="{{ ruta_base }}")
+						img(src="{{ ruta_base }}assets/img/slider/1.png", alt="" , class="img-responsive")
+						//
+							div(class="ticket")
+								span VISION MENORES
+								span sadasdasdasdasdasd
+								span asdasdasdasd
+
+			//Controles
+		//
+			a(href="#carousel-1" , class="left carousel-control" , role="button" , data-slide="prev")
+				span(class="glyphicon glyphicon-chevron-left" , aria-hidden="true")
+				span(class="sr-only") Anterior
+			a(href="#carousel-1" , class="right carousel-control" , role="button" , data-slide="next")
+				span(class="glyphicon glyphicon-chevron-right" , aria-hidden="true")
+				span(class="sr-only") Siguiente

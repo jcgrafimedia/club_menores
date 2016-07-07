@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="club_menores">
+  <head ng-controller="route">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Club Deportivo Menores">
+    <meta name="keywords" content="club, deportivo , menores , usmp">
+    <meta name="author" content="Juan Contreras Meneses">
+    <link rel="shortcut icon" href="http://localhost:8003/assets/img/logo_usmp.ico">
+    <link rel="stylesheet" href="http://localhost:8003/assets/css/normalize.min.css">
+    <link rel="stylesheet" href="http://localhost:8003/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost:8003/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://localhost:8003/assets/css/styles.css">
+    <title>Club Deportivo - Menores</title>
+  </head>
+  <body ng-controller="route">
+    <div id="main_container"><img id="bg_header" src="{{ruta_base}}assets/img/bg_header.jpg" alt="" class="img-responsive">
+      <header>
+        <div id="container_header"><a id="container_logo" href="{{ruta_base}}"><img id="logo" src="{{ruta_base}}assets/img/logo_club.png" alt="" class="img-responsive"></a>
+          <div id="container_social"><a href="https://www.facebook.com/deportivousmp.divisionesformativas?fref=ts" target="_blank"><i aria-hidden="true" class="fa fa-facebook-square fa-3x"></i></a><a href="https://www.youtube.com/user/CDUSMPMENORES" target="_blank"><i aria-hidden="true" class="fa fa-youtube-square fa-3x"></i></a></div>
+        </div>
+        <nav id="container_menu">
+          <ul>
+            <li><a href="{{ruta_base}}"><i aria-hidden="true" class="fa fa-home fa-2x"></i></a></li>
+            <li><a href="#">CLUB DEPORTIVO USMP</a></li>
+            <li><a href="#">PLANTEL GENERAL</a></li>
+            <li><a href="{{ruta_base}}copa/copa.html">COPA FEDERACION</a></li>
+          </ul>
+        </nav>
+        <!--include slider-->
+      </header>
+      <section>
+        <div id="categoria">
+          <div id="container_cat">
+            <div class="col-md-12"><a href="" class="img_cat"><img src="{{ruta_base}}assets/img/categoria/cat_1.png" class="img-responsive"></a><a href="" class="img_cat"><img src="{{ruta_base}}assets/img/categoria/cat_2.png" class="img-responsive"></a><a href="" class="img_cat"><img src="{{ruta_base}}assets/img/categoria/cat_3.png" class="img-responsive"></a></div>
+            <div class="col-md-12"><a href="" class="img_cat"><img src="{{ruta_base}}assets/img/categoria/cat_4.png" class="img-responsive"></a><a href="" class="img_cat"><img src="{{ruta_base}}assets/img/categoria/cat_5.png" class="img-responsive"></a><a href="" class="img_cat"><img src="{{ruta_base}}assets/img/categoria/cat_6.png" class="img-responsive"></a></div>
+          </div>
+          <div class="informacion">
+            <div class="info">
+              <p>La Primera División Copa De Oro - estará dividida en dos etapas y se jugará de la siguiente manera:</p>
+              <h3>Primera Etapa</h3>
+              <p>Los diez (10) clubes clasificados en la presente División de acuerdo a la tabla acumulada, jugarán todos contra todos en dos (2) ruedas de ida y vuelta, haciendo un total de dieciocho (18) fechas.</p>
+              <h3>Segunda Etapa</h3>
+              <p>Al término de la primera etapa (18 fechas) se formula la Tabla de Colocaciones Acumulada de todas las Categorías. Los seis (6) clubes que obtengan el mayor puntaje acumulado (posiciones del 1 al 6) jugarán una Liguilla de tres (3) ruedas, todos contra todos, con un total de quince (15) fechas. De esta Liguilla saldrá un ganador por cada categoría y un ganador por puntaje acumulado. Para este último efecto, los equipos mantendrán su puntaje individual y acumulado de ambas etapas. Los cuatro (4) clubes que obtengan el menor puntaje acumulado (posiciones del 7 al 10) jugarán la Copa de Oro B.</p>
+            </div>
+            <div class="enlaces"><a href="#">Bases</a>
+              <div class="divisor">- - - - - - - - - - - - - - - - - - - - -</div><a href="#">Fixture del torneo</a>
+              <div class="divisor">- - - - - - - - - - - - - - - - - - - - -</div><a href="#">Liguilla</a>
+              <div class="divisor">- - - - - - - - - - - - - - - - - - - - -</div><a href="#">Tabla Acumulada	</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div id="contacto"><span>Consultas e información: cdeportivo_menores@usmp.pe</span><span>Villa deportiva. Teléfono: 362-0064. Anexo: 3239</span></div>
+        <div id="copyright"><span>Copyright 2016 Área de Diseño Gráfico y Multimedia - FIA, USMP.</span><span>Todos los derechos reservados</span></div>
+      </footer>
+    </div>
+    <script src="http://localhost:8003/assets/js/jquery.min.js"></script>
+    <script src="http://localhost:8003/assets/js/bootstrap.min.js"></script>
+    <script src="http://localhost:8003/assets/js/angular.min.js"></script>
+    <script src="http://localhost:8003/assets/js/main.js"></script>
+    <script src="http://localhost:8003/assets/js/main_angular.js"></script>
+  </body>
+</html>

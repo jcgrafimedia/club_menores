@@ -1,0 +1,52 @@
+header {
+	width: 100%;
+	position: relative;
+	z-index: 200;
+	@include flex (column , null , null);
+	#container_header {
+		width: 100%;
+		//background-color: #328BD0;
+		padding: 3% 0px 3% 0px;
+		@include flex (row , space-between , null);
+		#container_logo {
+			width: 20%;
+			margin-left: 15%;
+			//background-color: red;
+		}
+		#container_social{
+			width: 30%;
+			@include flex (row , center , center);
+			//background-color: brown;
+			a {
+				color: #FFF;
+				margin: 0px 10px 0px 10px;
+			}
+		}
+	}
+	#container_menu {
+		width: 90%;
+		margin-left: 5%;
+		background-color: $menu_pricipal;
+		ul{
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+			@include flex (row , space-around , center);
+			li {
+				width: 100%;
+				@include flex (row , center , center);
+				a{
+					width: 100%;
+					color: #FFF;
+					height: 5rem;
+					font-size: 1.4rem;
+					@include flex (row , center , center);
+				}
+				a:hover {
+					background-color: $menu_hover;
+					transition: 1s;
+				}
+			}
+		}
+	}
+}

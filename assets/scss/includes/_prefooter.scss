@@ -1,0 +1,13 @@
+#prefooter {
+	width: 100%;
+	padding: 20px;
+	//background-color: $bg_prefooter;
+	@include flex (row , center , center);
+	a {
+		margin: 0px 50px 0px 50px;
+		width: 12%;
+		img {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+#slider {
+	width: 90%;
+	margin-left: 5%;
+	position: relative;
+	z-index: 200;
+	a {
+		width: 100%;
+		img {
+			width: 100%;
+			position: relative;
+			z-index: 200;
+			.ticket {
+				width: 350px;
+				height: 60px;
+				position: relative;
+				z-index: 300;
+				color: $color_text;
+				background-color: rgba(0, 44, 165, 0.8);
+				@include flex (row , center , center);
+			}
+		}
+	}
+}

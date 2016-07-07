@@ -1,0 +1,424 @@
+@charset "UTF-8";
+/* ===========================================
+   CSS Reset
+   =========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0 none;
+  font-size: 100%;
+  font-style: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  vertical-align: baseline;
+  text-decoration: none !important;
+  list-style: none;
+}
+
+/* ===========================================
+   Mixins
+   =========================================== */
+/* ===========================================
+   Imports
+   =========================================== */
+/* General imports
+   ––––––––––––––––––––––––––––––––––––––––––– */
+/* Includes imports
+   ––––––––––––––––––––––––––––––––––––––––––– */
+header {
+  width: 100%;
+  position: relative;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+}
+
+header #container_header {
+  width: 100%;
+  padding: 3% 0px 3% 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header #container_header #container_logo {
+  width: 20%;
+  margin-left: 15%;
+}
+
+header #container_header #container_social {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header #container_header #container_social a {
+  color: #FFF;
+  margin: 0px 10px 0px 10px;
+}
+
+header #container_menu {
+  width: 90%;
+  margin-left: 5%;
+  background-color: #082551;
+}
+
+header #container_menu ul {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header #container_menu ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header #container_menu ul li a {
+  width: 100%;
+  color: #FFF;
+  height: 5rem;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header #container_menu ul li a:hover {
+  background-color: #1585CF;
+  transition: 1s;
+}
+
+#slider {
+  width: 90%;
+  margin-left: 5%;
+  position: relative;
+  z-index: 200;
+}
+
+#slider a {
+  width: 100%;
+}
+
+#slider a img {
+  width: 100%;
+  position: relative;
+  z-index: 200;
+}
+
+#slider a img .ticket {
+  width: 350px;
+  height: 60px;
+  position: relative;
+  z-index: 300;
+  color: #FFF;
+  background-color: rgba(0, 44, 165, 0.8);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: #707070;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span {
+  color: #FFF;
+}
+
+footer #contacto {
+  width: 100%;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer #copyright {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#prefooter {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#prefooter a {
+  margin: 0px 50px 0px 50px;
+  width: 12%;
+}
+
+#prefooter a img {
+  width: 100%;
+}
+
+section {
+  width: 90%;
+  background-color: #DBD9D9;
+  margin-left: 5%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  /*
+	#container_links {
+		width: 100%;
+		@include flex (row , space-around , center);
+		a {
+			width: 28%;
+			margin: 0% 2% 0% 2%;
+			border-radius: 5px;
+			.container_img {
+				width: 100%;
+				border-radius: 5px;
+				img {
+					width: 100%;
+					border-radius: 5px;
+				}
+			}
+		}
+	}
+	*/
+}
+
+section #main_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+section #main_content #partidos {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section #main_content #partidos .container_partido {
+  background-color: #082551;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+section #main_content #partidos .container_partido .content_partido {
+  width: 100%;
+  height: 100px;
+  background-color: #FFFFFF;
+}
+
+section #main_content #partidos .container_partido .down_fecha {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section #main_content #partidos .container_partido span {
+  margin: 0% 2% 0% 2%;
+}
+
+section #main_content .table-responsive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+section #main_content .table-responsive .table {
+  font-size: 1rem;
+  color: #323F5B;
+  padding: 0px;
+  margin: 0px;
+}
+
+section #main_content .table-responsive .table tr th {
+  background-color: #AA2C2C;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+section #main_content .table-responsive .table tr td {
+  color: #323F5B;
+}
+
+section #main_content #container_multimedia {
+  margin-top: 2%;
+}
+
+section #main_content #container_multimedia a {
+  padding: 1.5%;
+  margin-top: 1%;
+  background-color: #1D4C92;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+section #main_content #container_multimedia a:hover {
+  color: #E1E2E4;
+  transition: 0.2s;
+}
+
+section #main_content #container_links {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+section #main_content #container_links a {
+  border-radius: 5px;
+}
+
+section #main_content #container_links a .container_img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+section #main_content #container_links a .container_img img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+section {
+  width: 90%;
+  background-color: #DBD9D9;
+  margin-left: 5%;
+  padding-bottom: 2%;
+  position: relative;
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+}
+
+section #categoria {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section #categoria #container_cat {
+  width: 90%;
+  margin: 2%;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section #categoria #container_cat div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section #categoria #container_cat div .img_cat {
+  margin: 1%;
+}
+
+section #categoria .informacion {
+  width: 90%;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section #categoria .informacion p {
+  text-align: justify;
+  color: #323F5B;
+  font-size: 1.5rem;
+}
+
+section #categoria .informacion h3 {
+  color: #1D4C92;
+}
+
+section #categoria .informacion .info {
+  width: 60%;
+}
+
+section #categoria .informacion .enlaces {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section #categoria .informacion .enlaces a {
+  font-size: 1.8rem;
+  color: #373941;
+}
+
+section #categoria .informacion .enlaces .divisor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===========================================
+   General Styles
+   =========================================== */
+body {
+  width: 100%;
+}
+
+#main_container {
+  width: 100%;
+}
+
+#main_container #bg_header {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+}

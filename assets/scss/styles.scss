@@ -1,0 +1,67 @@
+/* ===========================================
+   CSS Reset
+   =========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0 none;
+  font-size: 100%;
+  font-style: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  vertical-align: baseline;
+  text-decoration: none !important;
+  list-style: none;
+}
+
+/* ===========================================
+   Mixins
+   =========================================== */
+
+@mixin flex ($direction , $jc , $ai){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+/* ===========================================
+   Imports
+   =========================================== */
+
+/* General imports
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@import "_vars";
+
+
+/* Includes imports
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@import "includes/_header";
+@import "includes/_slider";
+@import "includes/_footer";
+@import "includes/_prefooter";
+@import "contents/_ctn_principal";
+@import "contents/_ctn_copa";
+
+
+/* ===========================================
+   General Styles
+   =========================================== */
+
+body{
+  width: 100%;
+}
+
+#main_container {
+  width: 100%;
+  #bg_header {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+  }
+
+}
