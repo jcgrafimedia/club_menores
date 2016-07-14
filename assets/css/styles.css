@@ -183,8 +183,8 @@ section {
   width: 90%;
   background-color: #DBD9D9;
   margin-left: 5%;
-  padding-bottom: 2%;
-  padding-top: 2%;
+  position: relative;
+  z-index: 300;
   display: flex;
   flex-direction: column;
   /*
@@ -216,6 +216,7 @@ section #main_content {
 }
 
 section #main_content #partidos {
+  background-color: #67A770;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -264,8 +265,6 @@ section #main_content .table-responsive {
 section #main_content .table-responsive .table {
   font-size: 1rem;
   color: #323F5B;
-  padding: 0px;
-  margin: 0px;
 }
 
 section #main_content .table-responsive .table tr th {
@@ -279,28 +278,15 @@ section #main_content .table-responsive .table tr td {
 }
 
 section #main_content #container_multimedia {
+  background-color: #93C756;
   margin-top: 2%;
-}
-
-section #main_content #container_multimedia a {
-  padding: 1.5%;
-  margin-top: 1%;
-  background-color: #1D4C92;
-  color: #FFFFFF;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3px;
-}
-
-section #main_content #container_multimedia a:hover {
-  color: #E1E2E4;
-  transition: 0.2s;
 }
 
 section #main_content #container_links {
   margin-top: 2%;
+  padding-right: 0%;
+  padding-left: 0%;
+  background-color: #CBD577;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -308,7 +294,11 @@ section #main_content #container_links {
 }
 
 section #main_content #container_links a {
+  margin: 0px;
+  padding: 0px;
   border-radius: 5px;
+  margin-left: 13px;
+  margin-right: 13px;
 }
 
 section #main_content #container_links a .container_img {
@@ -321,89 +311,204 @@ section #main_content #container_links a .container_img img {
   border-radius: 5px;
 }
 
+section .btn_principal {
+  padding: 1.5%;
+  margin-top: 1%;
+  background-color: #1D4C92;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+section .btn_principal:hover {
+  color: #E1E2E4;
+  transition: 0.2s;
+}
+
 section {
   width: 90%;
   background-color: #DBD9D9;
   margin-left: 5%;
-  padding-bottom: 2%;
   position: relative;
   z-index: 300;
   display: flex;
   flex-direction: column;
-}
-
-section #categoria {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-star;
   align-items: center;
 }
 
-section #categoria #container_cat {
+section #container_cat {
   width: 90%;
-  margin: 2%;
-  border-radius: 5px;
   background-color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
-section #categoria #container_cat div {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-section #categoria #container_cat div .img_cat {
-  margin: 1%;
-}
-
-section #categoria .informacion {
-  width: 90%;
-  padding: 2%;
+section #container_cat div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-section #categoria .informacion p {
-  text-align: justify;
+section #container_cat div a {
+  margin: 10px;
+}
+
+section .informacion {
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #FFFFFF;
+}
+
+section .informacion h3 {
+  color: #1D4C92;
+}
+
+section .informacion p {
   color: #323F5B;
   font-size: 1.5rem;
 }
 
-section #categoria .informacion h3 {
+section .informacion .titulo {
   color: #1D4C92;
+  font-size: 2.5rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
-section #categoria .informacion .info {
-  width: 60%;
+section .informacion .info {
+  text-align: justify;
 }
 
-section #categoria .informacion .enlaces {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-section #categoria .informacion .enlaces a {
-  font-size: 1.8rem;
-  color: #373941;
-}
-
-section #categoria .informacion .enlaces .divisor {
-  width: 100%;
+section .informacion .enlaces {
+  color: #475162;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+section .informacion .enlaces a {
+  color: #475162;
+  font-size: 1.9rem;
+}
+
+section .informacion .enlaces a:hover {
+  color: #1D4C92;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+section .categoria {
+  width: 90%;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+section .categoria .cabecera_cat {
+  background-color: rgba(8, 37, 81, 0.8);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+section .categoria .cabecera_cat img {
+  height: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+section .categoria .cabecera_cat .num_cat {
+  background-color: #1D4C92;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section .categoria .enlaces {
+  color: #475162;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section .categoria .enlaces a {
+  color: #475162;
+  font-size: 1.9rem;
+}
+
+section .categoria .enlaces a:hover {
+  color: #1D4C92;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+section .categoria .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-around;
+  padding-top: 5%;
+  background-color: #A03333;
+}
+
+section .categoria .content .row {
+  padding-bottom: 5%;
+}
+
+section .categoria .content .row img {
+  border-radius: 5px;
+  width: 150px;
+  height: 147px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 991px) {
+  .nombre_cat {
+    font-size: 2.2rem;
+  }
+  .num_cat {
+    height: auto;
+    font-size: 3rem;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nombre_cat {
+    font-size: 3.2rem;
+  }
+  .num_cat {
+    height: 100px;
+    font-size: 5rem;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .nombre_cat {
+    font-size: 3.2rem;
+  }
+  .num_cat {
+    height: 100px;
+    font-size: 5rem;
+  }
 }
 
 /* ===========================================
