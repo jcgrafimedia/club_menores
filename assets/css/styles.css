@@ -457,25 +457,46 @@ section .categoria .enlaces a:hover {
   transition: 0.5s;
 }
 
+section .categoria .enlaces #lista_resultado a {
+  font-size: 1.4rem;
+}
+
 section .categoria .content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: space-around;
   padding-top: 5%;
-  background-color: #A03333;
+  padding-bottom: 3%;
+  background-color: rgba(8, 37, 81, 0.1);
 }
 
-section .categoria .content .row {
-  padding-bottom: 5%;
+section .categoria .content #abc {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-section .categoria .content .row img {
+section .categoria .content #abc .row {
+  padding-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section .categoria .content #abc .row div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .categoria .content #abc .row div img {
   border-radius: 5px;
-  width: 150px;
-  height: 147px;
   padding-right: 0px;
   padding-left: 0px;
+  margin-bottom: 2%;
 }
 
 /* Small devices (tablets, 768px and up) */

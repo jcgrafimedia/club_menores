@@ -4,6 +4,21 @@ $(function() {
 		$("#nav_small").toggle('slow');
 	});
 
+
+
+	/* 	Efecto Click
+	================================================================*/
+
+	$("#lista_resultado").click(function(event) {
+		if() {
+			
+		}
+		$("#lista_resultado").css('color' , '#1D4C92');
+		$("#lista_resultado").css('font-weight' , 'bold');
+		$('#lista_resultado').css('transition' , '0.5ss');
+	});
+
+
 	/* 	Efecto Hover
 	================================================================*/
 

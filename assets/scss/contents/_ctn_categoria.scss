@@ -42,20 +42,34 @@ section {
 				font-weight: bold;
 				transition: 0.5s;
 			}
+			#lista_resultado {
+				a {
+					font-size: 1.4rem;
+				}
+			}
 		}
 		.content {
 			@include flex(column, flex-start, space-around);
 			padding-top: 5%;
-
-			background-color: #A03333;
-			.row {
-				padding-bottom: 5%;
-				img {
-					border-radius: 5px;
-					width: 150px;
-					height: 147px;
-					padding-right: 0px;
-					padding-left: 0px;
+			padding-bottom: 3%;
+			background-color: rgba(8,37,81,0.1);
+			#abc {
+				width: 100%;
+				//background-color: #A4CE5A;
+				padding-left: 5%;
+				padding-right: 5%;
+				.row {
+					padding-bottom: 3%;
+					@include flex(row, space-around, center);
+					div {
+						@include flex(column, center, center);
+						img {
+							border-radius: 5px;
+							padding-right: 0px;
+							padding-left: 0px;
+							margin-bottom: 2%;
+						}
+					}	
 				}
 			}
 		}
