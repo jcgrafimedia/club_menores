@@ -225,7 +225,7 @@ section #main_content #partidos {
 }
 
 section #main_content #partidos .container_partido {
-  background-color: #082551;
+  background-color: #294167;
   color: #FFFFFF;
   border-radius: 5px;
   padding-left: 0px;
@@ -471,13 +471,13 @@ section .categoria .content {
   background-color: rgba(8, 37, 81, 0.1);
 }
 
-section .categoria .content #abc {
+section .categoria .content #jugadores {
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
 }
 
-section .categoria .content #abc .row {
+section .categoria .content #jugadores .row {
   padding-bottom: 3%;
   display: flex;
   flex-direction: row;
@@ -485,18 +485,99 @@ section .categoria .content #abc .row {
   align-items: center;
 }
 
-section .categoria .content #abc .row div {
+section .categoria .content #jugadores .row div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-section .categoria .content #abc .row div img {
+section .categoria .content #jugadores .row div img {
   border-radius: 5px;
   padding-right: 0px;
   padding-left: 0px;
   margin-bottom: 2%;
+}
+
+section .categoria .content #resultados1 {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+section .categoria .content #resultados1 .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+section .categoria .content #resultados1 .row .container_partido {
+  background-color: #294167;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+section .categoria .content #resultados1 .row .container_partido .content_partido {
+  width: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section .categoria .content #resultados1 .row .container_partido .content_partido .equipo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+section .categoria .content #resultados1 .row .container_partido .content_partido .marcador {
+  font-size: 3.5rem;
+  color: #294167;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+section .categoria .content #resultados1 .row .container_partido .down_fecha {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .categoria .content #resultados1 .row .container_partido span {
+  margin: 0% 2% 0% 2%;
+}
+
+section .categoria .content #resultados1 .row .btn_principal {
+  padding: 0.5%;
+  margin-top: 1%;
+  background-color: #1D4C92;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+section .categoria .content #resultados1 .row .btn_principal:hover {
+  color: #E1E2E4;
+  transition: 0.2s;
 }
 
 /* Small devices (tablets, 768px and up) */

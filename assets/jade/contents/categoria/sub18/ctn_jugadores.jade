@@ -1,4 +1,4 @@
-extends ../layouts/layout
+extends ../../../layouts/layout
 
 block content
 	section
@@ -11,7 +11,7 @@ block content
 
 			div(class="enlaces col-xs-12 col-md-4")
 				div(class="divisor") - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-				a(href="{{ruta_base}}copa/categoria/sub18.html") Jugadores
+				a(href="{{ruta_base}}copa/categoria/sub18/jugadores.html") Jugadores
 				div(class="divisor") - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 				a(href="#lista_resultado" , target="_blank" , role="button" , data-toggle="collapse") Resultados
 
@@ -19,16 +19,16 @@ block content
 
 					div(class="collapse" , id="lista_resultado")
 						div(class="enlaces col-xs-12")
-							a(href="{{ruta_base}}copa/categoria/sub18.html") Primera Etapa
+							a(href="{{ruta_base}}copa/categoria/sub18/resultados1.html") Primera Etapa
 							div(class="divisor") - - - - - - - - - - - - - -
-							a(href="{{ruta_base}}copa/categoria/sub18.html") Segunda Etapa
+							a(href="{{ruta_base}}copa/categoria/sub18/resultados2.html") Segunda Etapa
 
 				div(class="divisor") - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 				a(href="{{ruta_base}}" , target="_blank") Tabla de Posiciones
 				div(class="divisor") - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 			div(class="content col-xs-12 col-md-8")
-				div(id="abc")
+				div(id="jugadores")
 					div(class="row")
 						div(class="col-xs-4")
 							img(src="{{ruta_base}}assets/img/jugadores/CAT. 99/AHUMADA LEVANO JERSON AIMAR.JPG" , class="img-responsive")

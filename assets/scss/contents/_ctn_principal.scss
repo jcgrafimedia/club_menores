@@ -14,7 +14,7 @@ section {
 			@include flex (column , space-around , center);
 			.container_partido {
 				//width: 80%;
-				background-color: #082551;
+				background-color: $box_partidos;
 				color: #FFFFFF;
 				border-radius: 5px;
 				padding-left: 0px;
@@ -84,7 +84,6 @@ section {
 			}
 		}
 	}
-
 
 	.btn_principal {
 		padding: 1.5%;

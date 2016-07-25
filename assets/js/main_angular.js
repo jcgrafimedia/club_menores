@@ -5,6 +5,10 @@ angular.module('club_menores' , [])
 	
 	.controller('route', ['$scope', function($scope){
 
+		/* =================== Rutas =================== */
+
+		/* ---------- Ruta base ---------- */
+
 		$scope.ruta_base = 'http://localhost:8003/';
 
 	}]);
